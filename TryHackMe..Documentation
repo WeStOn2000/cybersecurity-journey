@@ -1,0 +1,144 @@
+# TryHackMe Journey
+
+This folder documents my progress through TryHackMe as I build practical
+cybersecurity skills.
+
+---
+
+# Day 1 — Introduction to Web Security & SOC
+
+## What I Learned Today
+
+Today I started my hands-on cybersecurity training using TryHackMe.
+
+I learned some basic concepts around web enumeration and how Security
+Operations Center (SOC) teams respond to security alerts.
+
+---
+
+## Web Enumeration
+
+I learned that websites can contain directories and pages that are not
+visible or linked from the main website.
+
+These hidden resources can sometimes be discovered through a process
+called **web enumeration**.
+
+### DIRB
+
+One of the tools I learned about was `dirb`.
+
+DIRB uses wordlists to search a web server for directories and pages
+that may exist but aren't directly visible to a normal visitor.
+
+Example used in an authorized lab:
+
+dirb http://TARGET_IP/
+
+It may discover paths such as:
+
+/admin
+/login
+/uploads
+/backup
+
+### What I Learned
+
+A page being hidden does not mean that it is secure.
+
+Sensitive pages still need proper authentication, authorization, and
+other security controls.
+
+---
+
+## SOC — Security Operations Center
+
+I also learned about the basic role of a SOC team.
+
+A SOC monitors systems and networks for suspicious activity and
+investigates potential security incidents.
+
+One of the first things a SOC analyst does when an alert appears is
+**triage**.
+
+---
+
+## What is Triage?
+
+Triage means quickly assessing an alert to determine:
+
+- Is the alert legitimate?
+- How serious is it?
+- What system or user is affected?
+- Does it require immediate investigation or action?
+
+For example, if there are many failed login attempts followed by a
+successful login, an analyst could investigate the account, source IP,
+device, timestamps, and authentication logs.
+
+---
+
+## Basic Incident Response Flow
+
+Today I learned this basic SOC workflow:
+
+Alert → Triage → Investigate → Contain → Eradicate → Recover → Review
+
+I am still learning what happens during each stage and will document
+them in more detail as I progress.
+
+---
+
+## Tools Learned
+
+| Tool | Purpose |
+|------|---------|
+| DIRB | Discover hidden web directories and resources |
+
+---
+
+## Key Terms Learned
+
+**Enumeration** — Gathering information about a target or system during
+an authorized security assessment.
+
+**SOC** — Security Operations Center.
+
+**Triage** — Quickly determining the legitimacy, severity, and priority
+of a security alert.
+
+**Alert** — A notification generated when potentially suspicious
+activity is detected.
+
+---
+
+## Lab Environment
+
+Platform: TryHackMe
+
+All security testing documented here was performed in authorized
+training environments.
+
+---
+
+## What I Want to Learn Next
+
+- HTTP status codes
+- How wordlists work
+- More Linux commands
+- SOC alert investigation
+- Network traffic analysis
+- Other web enumeration tools
+
+---
+
+## Day 1 Reflection
+
+This was my first day documenting my TryHackMe journey.
+
+My main takeaway is that cybersecurity is not only about attacking
+systems. A major part of the field involves discovering weaknesses,
+monitoring systems, analyzing suspicious activity, and responding to
+security incidents.
+
+I will continue updating this repository as my skills develop.
