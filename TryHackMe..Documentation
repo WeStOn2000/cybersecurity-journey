@@ -142,3 +142,249 @@ monitoring systems, analyzing suspicious activity, and responding to
 security incidents.
 
 I will continue updating this repository as my skills develop.
+
+# Day 2 — Web Enumeration, Brute Force & Threat Intelligence
+
+## Overview
+
+Today I continued my TryHackMe cybersecurity training.
+
+The main concepts I studied were:
+
+- Web enumeration
+- Wordlists
+- Brute-force attacks
+- Authentication attacks
+- Threat actors
+- Cyber Threat Intelligence (CTI)
+- Indicators of Compromise (IOCs)
+- Tactics, Techniques, and Procedures (TTPs)
+
+---
+
+## 1. Enumeration
+
+Enumeration is the process of actively gathering detailed information
+about a target system, network, service, or application.
+
+During web enumeration, security professionals may attempt to discover
+resources that are not directly linked from the public website.
+
+Examples could include:
+
+/admin
+/login
+/uploads
+/backup
+/api
+
+Enumeration can include:
+
+- Web/content enumeration
+- User enumeration
+- Service enumeration
+- Port enumeration
+- DNS enumeration
+
+---
+
+## 2. DIRB
+
+DIRB is a web content enumeration tool.
+
+It uses a wordlist containing possible directory or file names and
+makes requests to determine whether those resources exist on the
+target web server.
+
+Example from an authorized lab:
+
+dirb http://TARGET_IP/
+
+A wordlist could contain:
+
+admin
+login
+uploads
+backup
+dashboard
+
+DIRB tests these possibilities against the target and analyzes the
+server responses.
+
+---
+
+## 3. Wordlists
+
+A wordlist is a file containing possible values that a security tool
+can test.
+
+Wordlists can be used for different security tasks, including:
+
+- Content discovery
+- Directory enumeration
+- Password auditing
+- Username discovery
+
+The purpose of the wordlist depends on the tool and the assessment.
+
+---
+
+## 4. Brute-Force Attacks
+
+A brute-force attack repeatedly tests possible values until the correct
+value is discovered.
+
+For authentication, this could involve attempting multiple password
+possibilities against an account.
+
+Related authentication attacks include:
+
+### Dictionary Attack
+
+Attempts passwords from a predefined wordlist instead of testing every
+possible character combination.
+
+### Password Spraying
+
+Attempts a small number of commonly used passwords against many
+different accounts.
+
+### Credential Stuffing
+
+Uses previously exposed username/password combinations against other
+services, taking advantage of password reuse.
+
+---
+
+## 5. Defensive Controls Against Brute Force
+
+Organizations can reduce the risk of authentication attacks using
+controls such as:
+
+- Multi-Factor Authentication (MFA)
+- Rate limiting
+- Account lockout policies
+- Strong password policies
+- Authentication monitoring
+- Detection of suspicious login activity
+
+A SOC may investigate repeated authentication failures as a possible
+Indicator of Compromise or suspicious activity.
+
+---
+
+## 6. Cyber Threat Intelligence (CTI)
+
+Cyber Threat Intelligence is information collected and analyzed about
+cyber threats.
+
+Security teams can use threat intelligence to better understand:
+
+- Threat actors
+- Malicious infrastructure
+- Attack techniques
+- Malware
+- Indicators of Compromise
+- Adversary behavior
+
+Threat intelligence can also be shared between security organizations
+to help defenders recognize known threats.
+
+---
+
+## 7. Threat Actors
+
+A threat actor is an individual or group that conducts or attempts
+malicious cyber activity.
+
+Understanding a threat actor's behavior can help defenders identify
+and respond to attacks.
+
+---
+
+## 8. Indicators of Compromise (IOCs)
+
+An Indicator of Compromise is an artifact or piece of evidence that
+may indicate malicious activity.
+
+Examples can include:
+
+- Malicious IP addresses
+- Malicious domains
+- Suspicious files
+- File hashes
+- Unusual network activity
+
+An IOC does not automatically prove that a compromise occurred.
+Security analysts investigate the surrounding context.
+
+---
+
+## 9. Tactics, Techniques, and Procedures (TTPs)
+
+TTPs describe how threat actors operate.
+
+Tactics describe what an attacker is trying to achieve.
+
+Techniques describe how the attacker attempts to achieve that goal.
+
+Procedures describe how a particular threat actor implements those
+techniques in practice.
+
+Understanding TTPs helps defenders recognize attacker behavior even
+when individual indicators, such as IP addresses, change.
+
+---
+
+## 10. SOC Connection
+
+The concepts I learned today connect directly to Security Operations
+Center (SOC) work.
+
+A simplified SOC workflow I am learning is:
+
+Alert → Triage → Investigation → Containment → Eradication → Recovery
+
+Threat intelligence and IOCs can provide additional context when a SOC
+analyst investigates suspicious activity.
+
+---
+
+## Key Terminology
+
+| Term | Meaning |
+|------|---------|
+| Enumeration | Gathering detailed information about a target |
+| Wordlist | Collection of possible values used by security tools |
+| Brute Force | Repeatedly testing possible values |
+| Password Spraying | Testing a few passwords across many accounts |
+| Credential Stuffing | Testing previously exposed credentials |
+| Threat Actor | Individual or group responsible for malicious activity |
+| CTI | Cyber Threat Intelligence |
+| IOC | Indicator that may suggest compromise |
+| TTP | Tactics, Techniques, and Procedures |
+| SOC | Security Operations Center |
+| Triage | Assessing the severity and priority of an alert |
+
+---
+
+## Key Takeaway
+
+My biggest takeaway today is that cybersecurity involves both offensive
+and defensive thinking.
+
+Enumeration and authentication attacks demonstrate how attackers may
+search for weaknesses, while threat intelligence and SOC operations
+show how defenders identify, understand, and respond to those threats.
+
+Understanding both perspectives can help me become a better security
+analyst.
+
+---
+
+## Lab Environment
+
+Platform: TryHackMe
+
+All security testing documented in this repository was performed in
+authorized training environments.
