@@ -388,3 +388,325 @@ Platform: TryHackMe
 
 All security testing documented in this repository was performed in
 authorized training environments.
+# 💻 Computer & Data Fundamentals
+
+## Overview
+
+In this section of my cybersecurity journey, I studied the basic
+types of computers, major computer components, types/states of data,
+and the core principles used to protect information.
+
+Understanding these fundamentals is important because cybersecurity
+requires knowing what systems contain, how they process information,
+and what exactly needs to be protected.
+
+---
+
+# 🖥️ Types of Computers
+
+## Desktop Computer
+
+A desktop is a personal computer designed to remain in one location.
+
+Desktop computers are usually easier to upgrade, repair, and customize
+because many of their components can be replaced individually.
+
+## Laptop
+
+A laptop is a portable computer that combines components such as the
+display, keyboard, battery, storage, memory, and processor into one device.
+
+## Server
+
+A server is a computer designed to provide services, information, or
+resources to other computers over a network.
+
+Examples include:
+
+- Web servers
+- File servers
+- Database servers
+- Email servers
+- Authentication servers
+
+## Mobile Devices
+
+Mobile devices are portable computing systems such as smartphones
+and tablets.
+
+They can store information, connect to networks, run applications,
+and therefore also need to be secured.
+
+---
+
+# ⚙️ Computer Components
+
+## CPU — Central Processing Unit
+
+The CPU is the main processor responsible for executing instructions
+and performing calculations.
+
+Programs rely on the CPU to process their instructions.
+
+---
+
+## RAM — Random Access Memory
+
+RAM provides temporary memory that the computer uses while programs
+are running.
+
+RAM is **volatile memory**, meaning the information stored in RAM is
+normally lost when the computer loses power.
+
+---
+
+## Storage
+
+Storage keeps information for long-term use.
+
+Common storage devices include:
+
+- SSD — Solid-State Drive
+- HDD — Hard Disk Drive
+
+Unlike RAM, information stored on an SSD or HDD normally remains after
+the computer is turned off.
+
+---
+
+## Motherboard
+
+The motherboard is the main circuit board of a computer.
+
+It allows components such as the CPU, RAM, storage, and other hardware
+to communicate with each other.
+
+---
+
+## GPU — Graphics Processing Unit
+
+The GPU is a processor designed primarily for graphics processing and
+other tasks that can benefit from performing many calculations in
+parallel.
+
+---
+
+## NIC — Network Interface Card / Controller
+
+A NIC allows a computer to communicate with other devices through
+a network.
+
+Examples include:
+
+- Ethernet
+- Wi-Fi
+
+Network communication is especially important in cybersecurity because
+many attacks and defensive systems involve communication between devices.
+
+---
+
+# 📊 Data
+
+Data is information that is created, stored, processed, or transmitted
+by computer systems.
+
+In cybersecurity, protecting data is one of the main objectives.
+
+Data can exist in different states.
+
+---
+
+## 💾 Data at Rest
+
+**Data at rest** is information that is currently being stored rather
+than actively transmitted.
+
+Examples:
+
+- Files stored on an SSD
+- Information inside a database
+- Photos stored on a phone
+- Files stored on a USB drive
+
+Encryption and access controls can help protect sensitive data at rest.
+
+---
+
+## 🌐 Data in Transit
+
+**Data in transit** is information moving between devices or systems.
+
+Examples:
+
+- Sending an email
+- Loading a website
+- Transferring a file
+- Communicating with a server
+
+Protocols such as HTTPS help protect data while it travels across
+networks.
+
+---
+
+## ⚡ Data in Use
+
+**Data in use** is information currently being processed by a computer.
+
+For example, when an application loads information into RAM so that
+the CPU can process it, that information is being used by the system.
+
+---
+
+# 🔐 The CIA Triad
+
+The **CIA Triad** is a foundational cybersecurity model.
+
+CIA stands for:
+
+- Confidentiality
+- Integrity
+- Availability
+
+These three principles help describe what cybersecurity professionals
+are trying to protect.
+
+---
+
+## 🔒 Confidentiality
+
+**Confidentiality** means information should only be accessible to
+authorized people and systems.
+
+Security controls that can help protect confidentiality include:
+
+- Passwords
+- Permissions
+- Encryption
+- Multi-Factor Authentication (MFA)
+
+### Question to remember:
+
+**Who is allowed to see this information?**
+
+---
+
+## 🧾 Integrity
+
+**Integrity** means information should remain accurate and should not
+be changed without authorization.
+
+Security controls that can help protect integrity include:
+
+- File hashes
+- Digital signatures
+- Access controls
+- Logging
+
+### Question to remember:
+
+**Can I trust that this information has not been improperly changed?**
+
+---
+
+## 🟢 Availability
+
+**Availability** means systems and information should be accessible to
+authorized users when they need them.
+
+Security measures that support availability include:
+
+- Backups
+- Redundant systems
+- Disaster recovery
+- System maintenance
+
+### Question to remember:
+
+**Can authorized users access the system or information when needed?**
+
+---
+
+# 🧠 CIA Triad Example
+
+Imagine a company has a database containing customer information.
+
+### Confidentiality
+
+Only authorized employees should be able to view sensitive customer
+information.
+
+### Integrity
+
+Unauthorized users should not be able to secretly modify customer
+records.
+
+### Availability
+
+Authorized employees should be able to access the database when they
+need it to perform their jobs.
+
+---
+
+# 🛡️ Why These Fundamentals Matter in Cybersecurity
+
+Understanding computer systems helps me understand what cybersecurity
+professionals are actually protecting.
+
+Computer components help explain:
+
+- Where information is stored
+- Where information is processed
+- How programs execute
+- How computers communicate
+- What attackers may attempt to target
+
+Understanding data helps explain what information needs protection.
+
+The CIA Triad provides three important security objectives:
+
+**Confidentiality → Protect information from unauthorized access**
+
+**Integrity → Protect information from unauthorized modification**
+
+**Availability → Keep information and systems accessible to authorized users**
+
+These concepts will provide a foundation for learning more advanced
+topics such as networking, operating systems, access control,
+encryption, malware, vulnerability management, and incident response.
+
+---
+
+# 📝 My Understanding
+
+I studied the different types of computers and the components that
+allow computers to operate.
+
+I also learned that data can exist at rest, in transit, or in use and
+that each state needs to be protected.
+
+The CIA Triad helped me understand that cybersecurity is not only
+about stopping hackers. It is also about protecting the
+confidentiality, integrity, and availability of information and
+computer systems.
+
+---
+
+## 📚 Topics Covered
+
+- [x] Types of computers
+- [x] Computer components
+- [x] CPU
+- [x] RAM
+- [x] Storage
+- [x] Motherboard
+- [x] GPU
+- [x] Network Interface Card
+- [x] Types/states of data
+- [x] Data at rest
+- [x] Data in transit
+- [x] Data in use
+- [x] CIA Triad
+- [x] Confidentiality
+- [x] Integrity
+- [x] Availability
